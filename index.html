@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	html,body{
+		
+		height: 100%;
+	}
+	.swiper-container{
+		/*position: relative;*/
+		height: 100%;
+	}
+	.swiper-slide{
+		width: 100%;
+		height: 100%;
+		/*position: absolute;
+		top: 0px;
+		left: 0px;*/
+	}
+	.page_1 img:nth-child(1){
+		width: 60%;
+		position: absolute;
+		top: 5%;
+		left: 20%;
+		
+	}
+	.page_1 img:nth-child(2){
+		width: 60%;
+		position: absolute;
+		top: 60%;
+		left: 20%;
+		
+	}
+	img.icon{
+		width: 8%;
+		position: absolute;
+		top: 90%;
+		left: 46%;
+		
+	}
+	.page_2 img:nth-child(1){
+		width: 40%;
+		position: absolute;
+		top: 5%;
+		left: 30%;
+		
+	}
+	.page_2 img:nth-child(2){
+		width: 70%;
+		position: absolute;
+		top: 30%;
+		left: 15%;
+		
+	}
+	.page_2 img:nth-child(3){
+		width: 70%;
+		position: absolute;
+		top: 35%;
+		left: 18%;
+		
+	}
+	.page_2 img:nth-child(4){
+		width: 70%;
+		position: absolute;
+		top: 10%;
+		left: 20%;
+		
+	}
+	.page_2 img:nth-child(5){
+		width: 60%;
+		position: absolute;
+		top: 78%;
+		left: 20%;
+		
+	}
+	.page_3 img:nth-child(1){
+		width: 80%;
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		
+	}
+	.page_3 img:nth-child(2){
+		width: 70%;
+		position: absolute;
+		top: 70%;
+		left: 15%;
+		
+	}
+	img.dot{
+		width: 6%;
+		position: absolute;
+		top: 85%;
+		left: 47%;
+	}
+	.page_4 img:nth-child(1){
+		width: 40%;
+		position: absolute;
+		top: 5%;
+		left: 30%;
+		
+	}
+	.page_4 img:nth-child(2){
+		width: 70%;
+		position: absolute;
+		top: 30%;
+		left: 15%;
+		
+	}
+	.page_4 img:nth-child(3){
+		width: 50%;
+		position: absolute;
+		top: 30%;
+		left: 30%;
+		
+	}
+	.page_4 img:nth-child(4){
+		width: 70%;
+		position: absolute;
+		top: 40%;
+		left: 15%;
+		
+	}
+	.page_4 img:nth-child(5){
+		width: 60%;
+		position: absolute;
+		top: 78%;
+		left: 20%;
+		
+	}
+	.page_5 img:nth-child(1){
+		width: 80%;
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		
+	}
+	.page_5 img:nth-child(2){
+		width: 70%;
+		position: absolute;
+		top: 70%;
+		left: 15%;
+		
+	}
+	.page_6 img:nth-child(1){
+		width: 40%;
+		position: absolute;
+		top: 5%;
+		left: 30%;
+		
+	}
+	.page_6 img:nth-child(2){
+		width: 70%;
+		position: absolute;
+		top: 30%;
+		left: 15%;
+		
+	}
+	.page_6 img:nth-child(3){
+		width: 50%;
+		position: absolute;
+		top: 30%;
+		left: 25%;
+		
+	}
+	.page_6 img:nth-child(4){
+		width: 80%;
+		position: absolute;
+		top: 33%;
+		left: 10%;
+		
+	}
+	.page_6 img:nth-child(5){
+		width: 60%;
+		position: absolute;
+		top: 78%;
+		left: 20%;
+		
+	}
+	.page_7 img:nth-child(1){
+		width: 80%;
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		
+	}
+	.page_7 img:nth-child(2){
+		width: 70%;
+		position: absolute;
+		top: 70%;
+		left: 15%;
+		
+	}
+	img.back{
+		width: 80%;
+		position: absolute;
+		left: 10%;
+		top: 20%;
+		
+	}
+	img.join{
+		width: 70%;
+		position: absolute;
+		left: 15%;
+		top: 70%;
+		
+	}
+	@keyframes move{
+		to{
+			transform:rotate(360deg)
+		}
+	}
+	img.music{
+		position: absolute;
+		width: 13%;
+		top: 3%;
+		right: 6%;
+		z-index: 100;
+		animation: move 6s linear infinite;
+	}
+	
+	</style>
+	<body>
+		<div class="swiper-container swiper-container-v">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide page_1" style="background: #083846;">
+					<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/cover.png" />
+					<img src="img/wording_cover.png" />
+					<img class="icon" src="img/icon_up.png" />
+				</div>
+				<div class="swiper-slide" style="background: #9262BF;">
+					<div class="swiper-container swiper-container-h swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page_2">
+								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/wording.png" />
+								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/circle.png">
+								<img src="img/people.png" />
+								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/floating_develop.png" />
+								<img src="img/check_develop.png" />
+								<img class="icon" src="img/icon_up.png" />
+								<img class="dot" src="img/dot1.png">
+							</div>
+							<div class="swiper-slide page_3">
+								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/introduction.png" />
+								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/btn_develop.png" />
+								<img class="icon" src="img/icon_up.png" />
+								<img class="dot" src="img/dot2.png" />
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="swiper-slide" style="background: #F3523C;">
+					<div class="swiper-container swiper-container-h swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page_4">
+								<img src="img/wording_design.png" />
+								<img class="ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/circle-design.png">
+								<img src="img/people_design.png">
+								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/floating_design.png" />
+								<img  class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/check_design.png" />
+								<img class="icon" src="img/icon_up.png" />
+								<img class="dot" src="img/dot1.png">
+							</div>
+							<div class="swiper-slide page_5">
+								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/introduction_design.png" />
+								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/btn_design.png" />
+								<img class="icon" src="img/icon_up.png" />
+								<img class="dot" src="img/dot2.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background: #FFBF50;">
+					<div class="swiper-container swiper-container-h swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page_6">
+								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/wording_production.png" />
+								<img src="img/circle-production.png">
+								<img src="img/people_production.png">
+								<img src="img/floating_production.png" />
+								<img src="img/check_production.png" />
+								<img class="icon" src="img/icon_up.png" />
+								<img class="dot" src="img/dot1.png">
+							</div>
+							<div class="swiper-slide page_7">
+								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/introduction_production.png" />
+								<img src="img/btn_design.png" />
+								<img class="icon" src="img/icon_up.png" />
+								<img class="dot" src="img/dot2.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide page_8" style="background: #083846;">
+					<img class="back" src="img/pic_back.png" />
+					<a href="#"><img class="join" src="img/btn_join.png"></a>
+				</div>
+				
+			</div>
+			<video src="video/L3V3LS - Swing.mp3" autoplay></video>
+			<img class="music" src="img/musicBtn.png">
+		</div>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="js/swiper.animate1.0.2.min.js"></script>
+		<script>
+			var mySwiper_a = new Swiper('.swiper-container-v',{
+				direction:'vertical',
+				tochRatio:0.5,
+				mousewheelControl:true,
+				onInit:function(swiper){
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+				},
+				onSlideChangeEnd:function(swiper){
+					swiperAnimate(swiper);
+				}
+			})
+			var mySwiper_b = new Swiper('.swiper-container-h',{
+				direction:'horizontal',
+				pagination:'swiper-pagination',
+				onInit:function(swiper){
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+				},
+				onSlideChangeEnd:function(swiper){
+					swiperAnimate(swiper);
+				}
+			})
+			var oBtn=document.getElementsByClassName('music')[0];
+			var oMu=document.getElementsByTagName('video');
+			var flag=true;
+			oBtn.onclick=function(){
+				if(flag){
+					oBtn.src='img/musicBtnOff.png';
+					oBtn.addClass('muted');
+				}
+				else{
+					oBtn.src='img/musicBtn.png';
+					oBtn.removeClass('muted');
+				}
+				flag=!flag;
+			}
+			
+		</script>
+	</body>
+</html>
