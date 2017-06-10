@@ -250,7 +250,7 @@
 								<img class="icon" src="img/icon_up.png" />
 								<img class="dot" src="img/dot1.png">
 							</div>
-							<div class="swiper-slide page_3 aa">
+							<div class="swiper-slide page_3">
 								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/introduction.png" />
 								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/btn_develop.png" />
 								<img class="icon" src="img/icon_up.png" />
@@ -272,7 +272,7 @@
 								<img class="icon" src="img/icon_up.png" />
 								<img class="dot" src="img/dot1.png">
 							</div>
-							<div class="swiper-slide page_5 aa">
+							<div class="swiper-slide page_5">
 								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/introduction_design.png" />
 								<img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/btn_design.png" />
 								<img class="icon" src="img/icon_up.png" />
@@ -293,7 +293,7 @@
 								<img class="icon" src="img/icon_up.png" />
 								<img class="dot" src="img/dot1.png">
 							</div>
-							<div class="swiper-slide page_7 aa">
+							<div class="swiper-slide page_7">
 								<img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"  src="img/introduction_production.png" />
 								<img src="img/btn_design.png" />
 								<img class="icon" src="img/icon_up.png" />
@@ -312,18 +312,13 @@
 			<img class="music" src="img/musicBtn.png">
 		</div>
 		<script src="js/swiper-3.4.2.min.js"></script>
-		
-		<!--<script src="js/swiper-3.4.2.jquery.min.js"></script>-->
 		<script src="js/swiper.animate1.0.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-2.1.0.js" charset="UTF-8"></script>
-		
 		<script>
 			var mySwiper_a = new Swiper('.swiper-container-v',{
-//				nested:true,
 				direction:'vertical',
 				tochRatio:0.5,
 				mousewheelControl:true,
-				onFirstInit:function(swiper){
+				onInit:function(swiper){
 					swiperAnimateCache(swiper);
 					swiperAnimate(swiper);
 				},
@@ -332,41 +327,29 @@
 				}
 			})
 			var mySwiper_b = new Swiper('.swiper-container-h',{
-//				nested:true,
 				direction:'horizontal',
 				pagination:'swiper-pagination',
-				onFirstInit:function(swiper){
+				onInit:function(swiper){
 					swiperAnimateCache(swiper);
 					swiperAnimate(swiper);
 				},
-//				onSlideChangeEnd:function(swiper){
-//					swiperAnimate(swiper);
-//				},
-//				onSlideChangeEnd:function(swiper){
-//					console.log($(this).find(".aa").find(".ani").get(0));
-//					if(swiper.activeIndex==0){
-//						$(this).find($(".swiper-slide").eq(1)).find(".ani").css("visibility","hidden").removeClass(function(){
-//							return $(this).attr("swiper-animate-effect")
-//						});
-//					}
-
-//				}
+				onSlideChangeEnd:function(swiper){
+					swiperAnimate(swiper);
+				}
 			})
-			var oMu=document.getElementsByTagName('video')[0];
 			var oBtn=document.getElementsByClassName('music')[0];
-			
+			var oMu=document.getElementsByTagName('video');
 			var flag=true;
 			oBtn.onclick=function(){
 				if(flag){
 					oBtn.src='img/musicBtnOff.png';
-					oMu.pause();
+					oBtn.addClass('muted');
 				}
 				else{
 					oBtn.src='img/musicBtn.png';
-					oMu.play();
+					oBtn.removeClass('muted');
 				}
 				flag=!flag;
-				
 			}
 			
 		</script>
